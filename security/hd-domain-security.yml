@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.hd.care
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 14:55:34 2026 GMT
+  hsts: false
+domains:
+- domain: hd.care
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

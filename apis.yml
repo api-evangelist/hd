@@ -1,8 +1,31 @@
 aid: hd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hd.png
 name: HD
-description: 'HD is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  HD is an AI-native healthcare marketplace and patient-navigation platform for
+  emerging Southeast Asia, headquartered in Bangkok, Thailand. Its consumer
+  surface, HDmall, is a health, dental, aesthetics, and surgery marketplace that
+  lets patients compare transparent pricing and book online across 30,000+
+  services from 3,000+ clinics and hospitals in Thailand (hdmall.co.th) and
+  Indonesia (hdmall.id). AI-powered navigation turns patient symptoms into
+  personalized, safety-checked care recommendations, and HDcare adds human-led,
+  AI-assisted concierge support for complex surgical cases. The platform has
+  navigated over 500,000 patients. HD is a consumer-facing healthtech operator
+  with no public developer API or portal; the strongest machine-readable surface
+  it publishes today is an llms.txt guiding LLMs to its canonical content. HD is
+  a portfolio company of Partech, added to the API Evangelist network for
+  enrichment tracking.
 url: https://raw.githubusercontent.com/api-evangelist/hd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Healthtech
+- Marketplace
+- Patient Navigation
+- Telehealth
+- Southeast Asia
+- Thailand
+- Indonesia
+- Surgery
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +54,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hd-domain-security.yml
 - type: Website
-  url: http://www.hd.care/
+  url: https://www.hd.care/
+- type: Blog
+  url: https://hdmall.co.th/blog/
+- type: Support
+  url: https://page.line.me/sfm1102x
+- type: TermsOfService
+  url: https://hdmall.co.th/policy/terms
+- type: PrivacyPolicy
+  url: https://hdmall.co.th/c/privacy-policy-hdmall
+- type: LLMsTxt
+  url: llms/hd-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
